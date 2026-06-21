@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <link rel="stylesheet" href="externalcss.css">
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #043e14;
+        }
+
+        h2{
+            text-align: center;
+            color: rgb(136, 198, 181);
+        }
+
+        form{
+            width: 700px;
+            margin: auto;
+            padding: 30px;
+            background-color: rgb(190, 190, 190);
+            border: 1px solid gray;
+            border-radius: 10px;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <h2 style="text-decoration: underline;">Registration Form</h2>
+    <br>
+    
+    
+    <form action="#" method="post" >
+        <label for="fullname">Full Name:</label> <br>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+        <br><br>
+
+        <label for="email">Email Address:</label> <br>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        <br><br>
+
+        <label for ="number">Phone Number:</label> <br>
+        <input type="tel" id="password" name="password" placeholder="Enter your phone number" required>
+        <br><br>
+
+       
+
+        <label>Gender:</label> <br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Other</label>
+        <br><br>
+
+        <label>Date of Birth</label> <br>
+        <input type="date" id="date" name="date"> <br><br>
+
+        <label for ="password">Password:</label> <br>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <br><br>
+
+        <label for ="confirmPassword">Confirm Password:</label> <br>
+        <input type="password" id="confirmPassword" name="password" placeholder="Enter your password again" required>
+        <br><br>
+
+        <label for="address">Address:</label> <br>
+        <textarea id="address" name="address" rows="4" cols="30" placeholder="Write your address here."></textarea>
+        <br><br>
+
+   
+
+        <label for="department">Department:</label> <br>
+        <select id="department"  name="department" required>
+           
+            <option value="CSE">CSE</option>
+            <option value="EEE">EEE</option>
+            <option value="SE">SE</option>
+            <option value="IT">IT</option>
+        </select>
+        <br><br>
+
+        <input type="checkbox" id="agree" name="agree" value="agree"> 
+        <label for="agree">I agree to the Terms and Condition</label> <br><br>
+
+        
+
+        <button type="submit" style="background-color: green; color: white;">Register</button>
+        <button type="reset" style="background-color: red; color: white;">Reset</button>
+    
+    </form>
+
+    
+
+   
+
+
+</body>
+</html>
